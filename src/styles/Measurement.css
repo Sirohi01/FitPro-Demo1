@@ -1,0 +1,161 @@
+/* src/styles/Measurement.css */
+
+.measurements-page {
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+    background-color: #f0f8ff; /* Light blue background for a fresh look */
+    border-radius: 16px;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Darker blue-gray color for contrast */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.measurements-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.measurement {
+    background: linear-gradient(145deg, #ffffff, #f4f6f9);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 -6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #3498db; /* Blue accent on left side for style */
+    transform: translateY(2px);
+}
+
+.measurement:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 -6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.measurement h3 {
+    color: #34495e; /* Soft grayish blue for headings */
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.measurement p {
+    color: #7f8c8d; /* Softer gray color for text */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.measurement label {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.measurement input,
+.measurement select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+    background-color: #ecf0f1; /* Light gray background for inputs */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.measurement input:focus,
+.measurement select:focus {
+    border-color: #3498db; /* Blue focus for input fields */
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.measurement button {
+    width: 100%;
+    padding: 1.2rem;
+    background-color: #3498db; /* Vibrant blue for the button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.measurement button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.measurement p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-top: 1rem;
+}
+
+.measurement-tips {
+    background: linear-gradient(145deg, #ffffff, #f9f9f9);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 -6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    border-left: 5px solid #e67e22; /* Orange accent on the left */
+}
+
+.measurement-tips h4 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.measurement-tips ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.measurement-tips li {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .measurements-page {
+        padding: 2rem;
+    }
+
+    .measurements-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .measurement {
+        padding: 1.5rem;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .measurement-tips {
+        padding: 1.5rem;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+}

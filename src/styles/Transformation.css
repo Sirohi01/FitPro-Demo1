@@ -1,0 +1,94 @@
+    .transformation-page {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .consultation-section {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .consultation-section h2 {
+        font-size: 2.5rem;
+        color: #ff6600;
+        margin-bottom: 1rem;
+    }
+    
+    .consultation-section p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+    
+    .consultation-button {
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1.1rem;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: background-color 0.3s ease;
+    }
+    
+    .consultation-button:hover {
+        background-color: #e65c00;
+    }
+    
+    .programs-section .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 2rem;
+    }
+    
+    .card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+        padding: 1.5rem 1rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card img {
+        width: 100%;
+        border-radius: 12px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 1rem;
+    }
+    
+    .card h3 {
+        color: #ff6600;
+        margin-bottom: 0.5rem;
+    }
+    
+    .card p {
+        color: #555;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+    
+    .card-button {
+        background: #ff6600;
+        color: white;
+        border: none;
+        padding: 0.6rem 1.4rem;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: background 0.3s;
+    }
+    
+    .card-button:hover {
+        background: #e65c00;
+    }
+    
